@@ -18,11 +18,11 @@ function Education() {
         onChange={handleOptionChange}
       >
         <option value="">Select an option</option>
-        <option value="High School Diploma">High School Diploma</option>
-        <option value="Associate's Degree">Associate's Degree</option>
-        <option value="Bachelor's Degree">Bachelor's Degree</option>
-        <option value="Master's Degree">Master's Degree</option>
-        <option value="Doctorate">Doctorate</option>
+        <option value="Primary">Primary</option>
+        <option value="Secondary">Secondary</option>
+        <option value="Higher Secondary">Higher Secondary</option>
+        <option value="Graduation">Graduation</option>
+        <option value="Post Graduation">Post Graduation</option>
       </select>
       {selectedOption && (
         <p className="text-gray-500 text-sm">You selected {selectedOption}.</p>

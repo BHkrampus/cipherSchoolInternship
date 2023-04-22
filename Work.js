@@ -18,11 +18,11 @@ function Work() {
         onChange={handleOptionChange}
       >
         <option value="">Select an option</option>
-        <option value="Software Engineer">Software Engineer</option>
-        <option value="Data Analyst">Data Analyst</option>
-        <option value="Marketing Manager">Marketing Manager</option>
-        <option value="Sales Representative">Sales Representative</option>
-        <option value="Human Resources Manager">Human Resources Manager</option>
+        <option value="Schooling">Schooling</option>
+        <option value="College Student">College Student</option>
+        <option value="Teaching">Teaching</option>
+        <option value="Job">Job</option>
+        <option value="Freelancer">Freelancer</option>
       </select>
       {selectedOption && (
         <p className="text-gray-500 text-sm">You selected {selectedOption}.</p>
