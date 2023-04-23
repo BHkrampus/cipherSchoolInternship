@@ -4,9 +4,11 @@ import { FaBell, FaSearch } from "react-icons/fa";
 import { FiSun } from "react-icons/fi";
 import Work from "./Work";
 import Education from "./Education";
-// import Map from "./Map";
+import About from "./About";
 import GitHubCalendar from "react-github-calendar";
-
+import Link from "./Link";
+import Interest from "./Interest";
+import Navbar from "./Navbar";
 function Profile() {
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => setDarkMode(!darkMode);
@@ -55,23 +57,15 @@ function Profile() {
             alt="Profile icon"
             className="h-20 w-20 mr-4 my-2 mx-4 z-10 float-left"
           />
-
-          <h1 className="text-l font-bold w-6">
-            Hello! Shivam shivamsingh24sh@gmail.com
-          </h1>
+          {/* <h1 className="text-l font-bold w-6">Hello!</h1> */}
+          <Navbar></Navbar>
         </div>
 
         <div className="container my-4 text-lg h-full w-full ">
-          <span className=" text-xl w-1/2 m-4">About me</span>
-          <span className=" object-right w-1/6 float-right">
-            <button className="bg-orange-400 justify-end rounded m-1  px-2">
-              edit
-            </button>
+          <span className=" text-xl w-1/2 m-4">
+            About me
+            <About></About>
           </span>
-          <input
-            className="bg-neutral-50 rounded-lg border-2 border-orange-500 box-border mx-10 h-full w-5/6"
-            type="text"
-          ></input>
           <hr />
           <br />
           <hr />
@@ -80,48 +74,26 @@ function Profile() {
             <GitHubCalendar username="grubersjoe" />
           </div>
           <hr />
-          <div className="bg-white mx-0">.</div>
+          <div className="bg-white text-white">.</div>
           on the web
           <span className=" object-right w-1/6 float-right">
-            <button className="bg-orange-400 justify-end rounded m-1  px-2">
-              edit
-            </button>
+            <button className="bg-orange-400 justify-end rounded m-1  px-2"></button>
           </span>
           <hr />
           <div className="conatainer grid-cols-4 text-sm w-11 m-4">
             Linkedin:
-            <input
-              className="bg-neutral-50 rounded-md border border-orange-500  w-80 mx-12 h-full"
-              type="text"
-              placeholder="paster url here"
-            />
+            <Link></Link>
             Github:
-            <input
-              className="bg-neutral-50 rounded-md border border-orange-500 w-80 mx-12 h-full"
-              type="text"
-              placeholder="paster url here"
-            />
+            <Link></Link>
             Twitter:
-            <input
-              className="bg-neutral-50 rounded-md border border-orange-500 w-80 mx-12 h-full "
-              type="text"
-              placeholder="paster url here"
-            />
+            <Link></Link>
             Instagram:
-            <input
-              className="bg-neutral-50 rounded-md border border-orange-500 w-80 mx-12 h-full "
-              type="text"
-              placeholder="paster url here"
-            />
+            <Link></Link>
             Facebook:
-            <input
-              className="bg-neutral-50 rounded-md border border-orange-500 w-80 mx-12 h-full "
-              type="text"
-              placeholder="paster url here"
-            />
+            <Link></Link>
           </div>
           <hr />
-          <div className="bg-white mx-0">.</div>
+          <div className="bg-white text-white">.</div>
           Education Details:
           <hr />
           <span className=" object-right w-1/6 float-right">
@@ -138,11 +110,11 @@ function Profile() {
             </div>
           </div>
           <hr />
-          <div className="bg-white mx-0">.</div>
+          <div className="bg-white text-white">.</div>
           Interest:
           <hr />
           <div className="container flex">
-            <span className="bg-neutral-50 border-orange-500 rounded-lg border-2 mx-2 my-4 px-2 text-sm">
+            {/* <span className="bg-neutral-50 border-orange-500 rounded-lg border-2 mx-2 my-4 px-2 text-sm">
               Web development
             </span>
             <span className="bg-neutral-50 border-orange-500 rounded-lg border-2 mx-2 my-4 px-2 text-sm">
@@ -156,10 +128,10 @@ function Profile() {
             </span>
             <span className="bg-neutral-50 border-orange-500 rounded-lg border-2 mx-2 my-4 px-2 text-sm">
               Blockchain
-            </span>
+            </span> */}
+            <Interest></Interest>
           </div>
-          <div className="bg-white mx-0">.</div>
-          <div className="container flex"></div>
+          <div className="bg-white text-white">.</div>
         </div>
       </div>
     </div>
